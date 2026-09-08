@@ -117,17 +117,17 @@ python manage.py migrate
 python manage.py runserver 0.0.0.0:8000
 ```
 
-Admin (optional): `admin` / `admin123` if you created that superuser locally.
+Django Admin Credentials : `admin` / `admin123`
 
 ### Mobile
 
 ```bash
 cd mobile
 npm install
-npm start
+npx expo start --web #for simple web version
 ```
 
-Open with Expo Go or an Android emulator.
+Open with Expo Go, an Android emulator or Web.
 
 ### API base URL
 
@@ -138,16 +138,6 @@ The app uses the Expo packager host on port **8000**.
 - Physical device: same Wi-Fi as the computer; `localhost` on the phone is the phone
 
 Django must run as `0.0.0.0:8000` for a physical phone.
-
-## Testing
-
-```bash
-cd backend
-source venv/bin/activate
-python manage.py test tasks
-```
-
-AI tests mock Gemini. They do not call Google.
 
 ## Project structure
 
@@ -167,9 +157,3 @@ tskmngr/
 - Gemini quality depends on the prompt and model
 - Relative dates depend on the server timezone (`Asia/Kolkata`)
 
-## Future improvements
-
-- Break a task into subtasks (bonus)
-- Date picker UI
-- Pagination if the list grows large
-- Tighter CORS and authentication if this were production
