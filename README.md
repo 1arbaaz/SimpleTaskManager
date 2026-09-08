@@ -104,7 +104,7 @@ GEMINI_MODEL=gemini-2.0-flash
 ```
 
 
-### Backend
+### Setup Backend
 
 ```bash
 cd backend
@@ -119,7 +119,7 @@ python manage.py runserver 0.0.0.0:8000
 
 Django Admin Credentials : `admin` / `admin123`
 
-### Mobile
+### Setup Mobile
 
 ```bash
 cd mobile
