@@ -149,11 +149,3 @@ tskmngr/
 └── mobile/           Expo + TypeScript
 ```
 
-## Limitations
-
-- No user accounts (intentional for the assignment)
-- CORS is open for local development
-- Due date is typed as `YYYY-MM-DD`
-- Gemini quality depends on the prompt and model
-- Relative dates depend on the server timezone (`Asia/Kolkata`)
-
